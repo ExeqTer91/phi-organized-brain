@@ -75,7 +75,7 @@ This is not an approximation but a rigorous mathematical identity derivable from
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/phi-organized-brain.git
+git clone https://github.com/ExeqTer91/phi-organized-brain.git
 cd phi-organized-brain
 
 # Install dependencies
