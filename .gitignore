@@ -1,0 +1,81 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data (large files - download separately)
+*.edf
+*.bdf
+*.set
+*.fdt
+*.mat
+*.npz
+*.csv
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+ds003969/
+mne_data/
+data/
+results/
+eeg-processing/
+figures/
+lucas-arc/
+dreamer_/
+runpod_/
+pod_info/
+imagenes/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+/tmp/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Replit
+.replit
+replit.nix
+.upm/
+.cache/
+.local/
+attached_assets/
