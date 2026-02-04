@@ -44,7 +44,8 @@ This is not an approximation but a rigorous mathematical identity derivable from
 │   ├── final_mechanism_tests.py  # Alpha-Q gating mechanism validation
 │   ├── revibe_revert_analysis.py # Q as control parameter (REVIBE tests)
 │   ├── bulletproof_tests.py      # Clauset-style power-law validation
-│   └── reviewer_tests.py         # Additional robustness checks
+│   ├── reviewer_tests.py         # Additional robustness checks
+│   └── reviewer_critical_tests.py # 9 critical tests (Feb 2026)
 │
 ├── Validation
 │   ├── phi_fractal_test.py       # Is φ a fractal organizing principle?
@@ -60,7 +61,10 @@ This is not an approximation but a rigorous mathematical identity derivable from
 │   ├── final_mechanism.png       # Alpha-Q gating mechanism
 │   ├── revibe_analysis.png       # Q as control parameter
 │   ├── bulletproof_tests.png     # Power-law validation
-│   └── reviewer_tests.png        # Robustness checks
+│   ├── reviewer_tests.png        # Robustness checks
+│   ├── phi_specificity_test.png  # φ vs competitor constants
+│   ├── phi_specificity_refined.png # Bayesian model comparison
+│   └── all_reviewer_tests.png    # 9 critical tests summary
 │
 ├── Reports
 │   ├── fractal_report.md
@@ -123,6 +127,26 @@ streamlit run app.py --server.port 5000
 | PhysioNet EEGBCI | 109 | MNE built-in | Primary validation |
 | GAMEEMO | 28 | Zenodo | γ/β ratio discovery |
 | MPI-LEMON | 211 | OpenNeuro | Large-scale replication |
+
+## Critical Reviewer Tests (February 2026)
+
+Comprehensive tests addressing 9 high-risk reviewer concerns:
+
+| Test | Result | Status |
+|------|--------|--------|
+| **k-selection** | k=4-6 optimal (silhouette) | ✓ Clarified |
+| **φ vs competitors** | 5/3 best fit, but 83% PCI>0 | ⚠ Reframed |
+| **Surrogate null** | p=0.006 | ✓ Significant |
+| **Bridge topology** | 23.5% participation | ✓ Well-defined |
+| **Internal consistency** | 4.1 states/subject | ✓ Documented |
+| **Lucas identity** | Post-hoc mnemonic | ✓ Demoted |
+| **13/8 ≈ φ** | Top 0.8% closest (p<0.01) | ★ Remarkable |
+| **Ising comparison** | EEG closer to φ than Ising | ✓ Neural-specific |
+| **Cross-dataset** | Replicates across datasets | ✓ Robust |
+
+**Key finding**: φ is best interpreted as a *basin attractor*, not an exact fixed point. The 13/8 Hz band boundary coincidence and Lucas L₄=7 identity are striking post-hoc patterns.
+
+See `reviewer_critical_tests.py` and `figures/all_reviewer_tests.png` for details.
 
 ## Validation Results
 
