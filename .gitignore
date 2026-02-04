@@ -54,7 +54,7 @@ mne_data/
 data/
 results/
 eeg-processing/
-figures/
+# figures/ - now included for Frontiers
 lucas-arc/
 dreamer_/
 runpod_/
